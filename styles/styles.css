@@ -1,0 +1,207 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+} 
+body {
+font-family: cursive;
+background-color: #ffff;
+}   
+a {
+text-decoration: none;    
+}  
+li { 
+list-style: none;
+}
+/* NAVBAR STYLING STARTS */
+.navbar {
+display: flex;    
+align-items: center;    
+justify-content: center;   
+padding: 20px;
+background-color: #7C0981;
+   
+}
+    
+    .nav-links a {
+    
+    
+    
+    }
+    
+    /* LOGO */
+    
+    .logo {
+        
+    
+    }
+
+    .logo img{
+       width: 75px;
+    }
+     
+    .title{
+        display: flex;    
+        align-items: center;    
+        justify-content: center;   
+    }
+
+    .title h1{
+        margin-top: 90px;
+        color: #7C0981;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 42px;
+    }
+
+    .main-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-image img{
+        max-width: 100%;
+        height: 500px;
+    }
+
+
+    .info-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info-form p{
+        text-transform: uppercase;
+        color: #7C0981;
+        font-size: 24px;
+    }
+
+    .buttonCTA{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+
+    .buttonCTA a{
+        background-color: #7C0981;
+        border-radius: 50px;
+        color: white;
+        padding: 15px 32px;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 30px 2px;
+        cursor: pointer;
+    }
+
+    .circle{
+        background: #E87552;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        top: 300px;
+        left: 280px;
+    }
+    /* NAVBAR MENU */
+    
+    .menu {
+    
+    display: flex;
+    
+    gap: 1em;
+    
+    font-size: 18px;
+    
+    }
+    
+    .menu li:hover {
+    
+    background-color: #4c9e9e;
+    
+    border-radius: 5px;
+    
+    transition: 0.3s ease;
+    
+    }
+    
+    .menu li {
+    
+    padding: 5px 14px;
+    
+    }
+
+    /*RESPONSIVE NAVBAR MENU STARTS*/
+
+/* CHECKBOX HACK */
+
+input[type=checkbox]{
+
+    display: none;
+    
+    } 
+    
+    /*HAMBURGER MENU*/
+    
+    .hamburger {
+    
+    display: none;
+    
+    font-size: 24px;
+    
+    user-select: none;
+    
+    }
+    
+    /* APPLYING MEDIA QUERIES */
+    
+    @media (max-width: 768px) {
+    
+    .menu { 
+    
+    display:none;
+    
+    position: absolute;
+    
+    background-color:teal;
+    
+    right: 0;
+    
+    left: 0;
+    
+    text-align: center;
+    
+    padding: 16px 0;
+    
+    }
+    
+    .menu li:hover {
+    
+    display: inline-block;
+    
+    background-color:#4c9e9e;
+    
+    transition: 0.3s ease;
+    
+    }
+    
+    .menu li + li {
+    
+    margin-top: 12px;
+    
+    }
+    
+    input[type=checkbox]:checked ~ .menu{
+    
+    display: block;
+    
+    }
+    
+    .hamburger {
+    
+    display: block;
+    
+    }
+}
