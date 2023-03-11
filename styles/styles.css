@@ -21,6 +21,7 @@ align-items: center;
 justify-content: center;   
 padding: 20px;
 background-color: #7C0981;
+height: 90px;
    
 }
     
@@ -48,7 +49,7 @@ background-color: #7C0981;
     }
 
     .title h1{
-        margin-top: 90px;
+        margin-top: 60px;
         color: #7C0981;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 42px;
@@ -101,9 +102,40 @@ background-color: #7C0981;
         border-radius: 50%;
         width: 50px;
         height: 50px;
-        position: fixed;
+        position: absolute;
         top: 300px;
         left: 280px;
+    }
+    .circle:hover,.circle2:hover,.circle3:hover,.circle4:hover{
+        background-color: #7C0981;
+        transition: 0.5s;
+    }
+    .circle2{
+        background: #E87552;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 350px;
+        left: 320px;
+    }
+    .circle3{
+        background: #E87552;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: 10px;
+        right: 320px;
+    }
+    .circle4{
+        background: #E87552;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 120px;
+        right: 300px;
     }
     /* NAVBAR MENU */
     
